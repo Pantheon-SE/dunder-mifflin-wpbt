@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c448ef21bb1f82181ce1b26cbd0caba",
+    "content-hash": "642fcff85a22bddafe077fe5b0b88c6b",
     "packages": [
         {
             "name": "composer/installers",
@@ -570,6 +570,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/lh-hsts/"
+        },
+        {
+            "name": "wpackagist-plugin/ocean-extra",
+            "version": "1.8.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ocean-extra/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ocean-extra.zip?timestamp=1630925167"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ocean-extra/"
         },
         {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
