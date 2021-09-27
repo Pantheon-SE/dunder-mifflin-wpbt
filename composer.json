@@ -11,15 +11,21 @@
     {
       "type": "vcs",
       "url": "https://github.com/pantheon-systems/wordpress-composer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/10up/distributor"
     }
   ],
   "require": {
     "php": ">=7.3",
+    "10up/distributor": "^1.6",
     "composer/installers": "^1 || ^2",
     "pantheon-systems/quicksilver-pushback": "^2",
     "pantheon-systems/wordpress-composer": "*",
     "roots/wp-password-bcrypt": "^1.0.0",
     "vlucas/phpdotenv": "^3.1.0",
+    "wpackagist-plugin/edit-flow": "^0.9.6",
     "wpackagist-plugin/elementor": "^3.4",
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/ocean-custom-sidebar": "^1.0",

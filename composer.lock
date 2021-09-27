@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7744538907c93cc3eee5d8d2189c14e9",
+    "content-hash": "b0000b7c3eea942acee4ce5c4ad266d0",
     "packages": [
+        {
+            "name": "10up/distributor",
+            "version": "1.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/10up/distributor.git",
+                "reference": "7b90078cd3a32fdce142a188857801fff814f9bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/distributor/zipball/7b90078cd3a32fdce142a188857801fff814f9bc",
+                "reference": "7b90078cd3a32fdce142a188857801fff814f9bc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "georgestephanis/application-passwords": "0.1.2",
+                "php": ">=5.6",
+                "yahnis-elsts/plugin-update-checker": "^4.4"
+            },
+            "require-dev": {
+                "10up/phpcs-composer": "dev-master",
+                "10up/wp_mock": "~0.4",
+                "10up/wpacceptance": "dev-master",
+                "phpunit/phpunit": "~7.5"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Distributor\\": "includes/classes/"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "phpcs ."
+                ],
+                "lint-fix": [
+                    "phpcbf ."
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "email": "opensource@10up.com"
+                }
+            ],
+            "description": "Distributor is a WordPress plugin that makes it easy to distribute and reuse content across your websites — whether in a single multisite or across the web.",
+            "homepage": "https://distributorplugin.com/",
+            "support": {
+                "source": "https://github.com/10up/distributor/tree/1.6.5",
+                "issues": "https://github.com/10up/distributor/issues"
+            },
+            "time": "2021-09-01T22:24:02+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.12.0",
@@ -156,6 +213,55 @@
                 }
             ],
             "time": "2021-09-13T08:19:44+00:00"
+        },
+        {
+            "name": "georgestephanis/application-passwords",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress/application-passwords.git",
+                "reference": "0eef095b4dc984c26ee8149c01a323be83da715a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress/application-passwords/zipball/0eef095b4dc984c26ee8149c01a323be83da715a",
+                "reference": "0eef095b4dc984c26ee8149c01a323be83da715a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "wp-coding-standards/wpcs": "^2.1",
+                "wpsh/local": "^0.2.3",
+                "xwp/wp-dev-lib": "^1.2"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "George Stephanis",
+                    "email": "georgestephanis@automattic.com",
+                    "homepage": "https://github.com/georgestephanis"
+                }
+            ],
+            "description": "Provide Application Passwords for WordPress core",
+            "homepage": "https://github.com/WordPress/application-passwords",
+            "keywords": [
+                "api",
+                "application Ppasswords",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/WordPress/application-passwords/issues",
+                "source": "https://github.com/WordPress/application-passwords/tree/0.1.2"
+            },
+            "abandoned": true,
+            "time": "2020-08-19T19:55:48+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -554,6 +660,24 @@
             "time": "2021-01-20T14:39:46+00:00"
         },
         {
+            "name": "wpackagist-plugin/edit-flow",
+            "version": "0.9.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/edit-flow/",
+                "reference": "tags/0.9.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/edit-flow.0.9.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/edit-flow/"
+        },
+        {
             "name": "wpackagist-plugin/elementor",
             "version": "3.4.4",
             "source": {
@@ -732,6 +856,56 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentynineteen/"
+        },
+        {
+            "name": "yahnis-elsts/plugin-update-checker",
+            "version": "v4.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
+                "reference": "3155f2d3f1ca5e7ed3f25b256f020e370515af43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/3155f2d3f1ca5e7ed3f25b256f020e370515af43",
+                "reference": "3155f2d3f1ca5e7ed3f25b256f020e370515af43",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "load-v4p11.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yahnis Elsts",
+                    "email": "whiteshadow@w-shadow.com",
+                    "homepage": "http://w-shadow.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A custom update checker for WordPress plugins and themes. Useful if you can't host your plugin in the official WP repository but still want it to support automatic updates.",
+            "homepage": "https://github.com/YahnisElsts/plugin-update-checker/",
+            "keywords": [
+                "automatic updates",
+                "plugin updates",
+                "theme updates",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/YahnisElsts/plugin-update-checker/issues",
+                "source": "https://github.com/YahnisElsts/plugin-update-checker/tree/v4.11"
+            },
+            "time": "2021-03-15T16:07:52+00:00"
         }
     ],
     "packages-dev": [
